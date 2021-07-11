@@ -1,0 +1,185 @@
+:root {
+  --main: #a862ea;
+  --mainlight: #f7efff;
+  --primary: #6383ea;
+  --light: #f9f9f9;
+}
+
+/* fonts */
+
+.mainheader1 {
+  font-family: Lora;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+
+.maincolor {
+  color: var(--main);
+}
+
+.mainheader2 {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+}
+
+.largeheader {
+  font-family: Lora;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+
+.nav-item {
+  font-family: Montserrat;
+  font-size: 14px;
+  letter-spacing: 0em;
+}
+.generaltext {
+  font-family: Montserrat;
+  font-size: 12px;
+  letter-spacing: 0em;
+}
+.generaltextlarge {
+  font-family: Montserrat;
+  font-size: 16px;
+  letter-spacing: 0em;
+  line-height: 30px;
+}
+
+/* end */
+
+/* buttons */
+a.signinbtn {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  background-color: var(--mainlight);
+  color: var(--main);
+}
+
+a.signinbtn:hover {
+  background-color: var(--main);
+  color: var(--mainlight);
+}
+a.darkerbtn {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  background-color: var(--main);
+  color: var(--mainlight);
+}
+a.darkerbtn:hover {
+  background-color: var(--mainlight);
+  color: var(--main);
+}
+
+/* end */
+
+/* images */
+
+.sectionimages {
+  width: 200px;
+  height: 200px;
+}
+
+/* end */
+
+/* backgrounds  and colors*/
+
+.lightbackground {
+  background-color: var(--light);
+}
+
+.purplelightbackground {
+  background-color: var(--mainlight);
+}
+
+.lighttext {
+  color: rgb(100, 100, 100);
+}
+
+.loginbackground {
+  background-color: #f7f9fc;
+}
+
+/* end */
+
+/* sign in */
+
+.logindetailsform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.loginform {
+  background-color: #fff;
+  min-width: 30%;
+  margin-top: 100px;
+}
+
+.loginform input {
+  font-family: Montserrat;
+  font-size: 12px;
+  letter-spacing: 0em;
+  border: 1px solid var(--main);
+  height: 45px;
+}
+.loginform input:focus {
+  box-shadow: 0 0 0 0.1rem var(--main);
+}
+
+button.signinbutton {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  background-color: var(--main);
+  color: var(--mainlight);
+  width: 100%;
+}
+button.signinbutton:hover {
+  background-color: var(--mainlight);
+  color: var(--main);
+}
+a.createaccountbtn {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  width: 100%;
+}
+a.createaccountbtn:hover {
+  background-color: var(--mainlight);
+  color: var(--main);
+}
+
+/* end */
+
+/* responsive */
+
+@media (max-width: 701px) {
+  .largeheader {
+    font-size: 20px;
+
+    line-height: 30px;
+  }
+
+  .generaltextlarge {
+    font-family: Montserrat;
+    font-size: 15px;
+    letter-spacing: 0em;
+    line-height: 35px;
+  }
+}
