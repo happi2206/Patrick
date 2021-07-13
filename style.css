@@ -1,4 +1,4 @@
-:root {
+<<<<<<< HEAD :root {
   --main: #a862ea;
   --mainlight: #f7efff;
   --primary: #6383ea;
@@ -129,15 +129,37 @@ a.darkerbtn:hover {
   margin-top: 100px;
 }
 
-.loginform input {
+.loginform input,
+.loginform select {
   font-family: Montserrat;
   font-size: 12px;
   letter-spacing: 0em;
   border: 1px solid var(--main);
   height: 45px;
 }
-.loginform input:focus {
+.loginform input:focus,
+.loginform select:focus {
   box-shadow: 0 0 0 0.1rem var(--main);
+}
+
+.alignicons {
+  position: relative;
+}
+/* Arrow */
+.alignicons::after {
+  content: '\f078';
+  font-family: 'FontAwesome';
+  color: var(--main);
+  position: absolute;
+  bottom: 12px;
+  right: 1px;
+  padding: 0 1em;
+  cursor: pointer;
+  font-size: 12px;
+  pointer-events: none;
+  -webkit-transition: 0.25s all ease;
+  -o-transition: 0.25s all ease;
+  transition: 0.25s all ease;
 }
 
 button.signinbutton {
@@ -153,6 +175,19 @@ button.signinbutton:hover {
   background-color: var(--mainlight);
   color: var(--main);
 }
+a.signinbutton {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  background-color: var(--main);
+  color: var(--mainlight);
+  width: 100%;
+}
+a.signinbutton:hover {
+  background-color: var(--mainlight);
+  color: var(--main);
+}
 a.createaccountbtn {
   font-family: Montserrat;
   font-size: 12px;
@@ -163,6 +198,25 @@ a.createaccountbtn {
 a.createaccountbtn:hover {
   background-color: var(--mainlight);
   color: var(--main);
+}
+
+/* end */
+
+/* onboarding */
+
+.circle {
+  background-color: var(--main);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+#hide {
+  display: none;
 }
 
 /* end */
